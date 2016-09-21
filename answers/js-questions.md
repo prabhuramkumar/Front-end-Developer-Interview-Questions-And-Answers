@@ -11,11 +11,16 @@ sometimes don't need to add event listeners for every element.
 
 #### Explain how `this` works in JavaScript
 
-*Not answered yet*
+'This' which is defined in a function refers to the context from where the function is invoked rather than from where its defined. For example, if we call a function in which this is defined from the global space 'this' would refer to windows object, if we call the same function from another function then 'this' would refer to the context of the function from where it's invoked.
 
 #### Explain how prototypal inheritance works
+In Javascript inheritance is made possible via prototype. Every object has a prototype property inbuilt, the prototype property will point to a object which will have some predefined functions, For example - String  will have toString() etc defined in its prototype.
 
-*Not answered yet*
+Inheretince can be possible by overding the child classes(read functions) prototype object with parents new instance.
+`child.prototype = new parent()`.
+
+*Detailed example is here* https://repl.it/CpU4/2
+
 
 #### What do you think of AMD vs CommonJS?
 
